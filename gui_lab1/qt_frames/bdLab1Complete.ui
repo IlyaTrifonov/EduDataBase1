@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>918</width>
+    <height>690</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Inter</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Базы данных. Лаб. 1. Трифонов И. А.</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="centralwidget_vertical_layout">
+    <property name="spacing">
+     <number>16</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="task_horizontal_layout">
+      <item>
+       <widget class="QLabel" name="task_label">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Задание (вариант 25):&lt;/p&gt;&lt;p&gt;Дан одномерный массив Xn. Найти произведение элементов массива, кратных 3.&lt;/p&gt;&lt;p&gt;Сформировать новый массив из элементов массива Xn, значения которых меньше А.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="create_xn_array_horizontal_layout" stretch="0,4,0,4,0,4">
+      <item>
+       <widget class="QLabel" name="xn_array_capacity_label">
+        <property name="text">
+         <string>Размер массива Xn:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="xn_array_capacity_line_edit"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="a_number_label">
+        <property name="text">
+         <string>Число A:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="a_number_line_edit"/>
+      </item>
+      <item>
+       <spacer name="create_xn_array_horizontal_spacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="create_xn_array_push_button">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="text">
+         <string>Создать массив</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="xn_input_horizontal_layout" stretch="8,3">
+      <item>
+       <layout class="QVBoxLayout" name="xn_left_array_input_vertical_layout">
+        <item>
+         <widget class="QLabel" name="xn_input_label">
+          <property name="text">
+           <string>Введите массив Xn</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="xn_table_widget"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="xn_right_navbar_vertical_layout">
+        <item>
+         <spacer name="xn_right_navbar_vertical_spacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="back_push_button">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Вернуться</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="calculate_push_button">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Вычислить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="xr_output_horizontal_layout" stretch="8,3">
+      <item>
+       <layout class="QVBoxLayout" name="xr_left_array_output_vertical_layout">
+        <item>
+         <widget class="QLabel" name="xr_output_label">
+          <property name="text">
+           <string>Созданный массив Xr</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="xr_table_widget"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="xr_right_navbar_vertical_layout" stretch="0,0,0,0">
+        <item>
+         <spacer name="xr_right_navbar_vertical_spacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="mult_3_label">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Произведение элементов &lt;/p&gt;&lt;p&gt;массива, кратных трём&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="mult_3_line_edit">
+          <property name="cursor">
+           <cursorShape>ForbiddenCursor</cursorShape>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="clear_push_button">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Начать заново</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>918</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
